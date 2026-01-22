@@ -51,8 +51,10 @@ export async function POST(request: Request) {
 
   fs.mkdirSync(outputDir, { recursive: true })
 
+  // ✅ FIX: Re-encode video instead of using -c copy
+  // This ensures the video displays properly in browsers
   const ffmpegCommand =
-    `ffmpeg -i "${inputPath}" -ss ${startTime} -to ${endTime} -c copy "${outputPath}"`
+    `ffmpeg -i "${inputPath}" -ss ${startTime} -to ${endTime} -c:v libvpx-vp9 -c:a libopus "${outputPath}"`
 
   await new Promise<void>((resolve, reject) => {
     exec(ffmpegCommand, (error) => {

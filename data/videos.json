@@ -164,5 +164,18 @@
     "completionSum": 0,
     "duration": 5,
     "createdAt": "2026-01-22T18:50:40.824Z"
+  },
+  "e79da2e4-ce88-4efc-bf3d-145085c9f520": {
+    "id": "e79da2e4-ce88-4efc-bf3d-145085c9f520",
+    "filePath": "/uploads/trimmed/e79da2e4-ce88-4efc-bf3d-145085c9f520.webm",
+    "viewCount": 2,
+    "completionSum": 2,
+    "duration": 5,
+    "createdAt": "2026-01-22T20:39:00.615Z",
+    "title": "Test video",
+    "description": "This is a basic test video",
+    "tags": [
+      ""
+    ]
   }
 }
