@@ -19,7 +19,7 @@
     "id": "9c1a72c1-59ee-49d8-9c81-310e1fb8b972",
     "filePath": "/uploads/trimmed/9c1a72c1-59ee-49d8-9c81-310e1fb8b972.webm",
     "viewCount": 26,
-    "completionSum": 3.249871333333333,
+    "completionSum": 4.249871333333333,
     "duration": 3,
     "createdAt": "2026-01-22T12:59:22.740Z"
   },
@@ -30,5 +30,139 @@
     "completionSum": 0,
     "duration": 2,
     "createdAt": "2026-01-22T13:29:02.207Z"
+  },
+  "862eeeef-84ab-4fee-b3ad-539687569d80": {
+    "id": "862eeeef-84ab-4fee-b3ad-539687569d80",
+    "filePath": "/uploads/trimmed/862eeeef-84ab-4fee-b3ad-539687569d80.webm",
+    "viewCount": 2,
+    "completionSum": 2.663729,
+    "duration": 3,
+    "createdAt": "2026-01-22T14:22:11.077Z"
+  },
+  "235dfc0d-a76a-4b81-b17a-86b9fcee00be": {
+    "id": "235dfc0d-a76a-4b81-b17a-86b9fcee00be",
+    "filePath": "/uploads/trimmed/235dfc0d-a76a-4b81-b17a-86b9fcee00be.webm",
+    "viewCount": 0,
+    "completionSum": 0,
+    "duration": 5,
+    "createdAt": "2026-01-22T15:32:06.541Z"
+  },
+  "0a778791-07c8-4451-ad11-df1c39d5422c": {
+    "id": "0a778791-07c8-4451-ad11-df1c39d5422c",
+    "filePath": "/uploads/trimmed/0a778791-07c8-4451-ad11-df1c39d5422c.webm",
+    "viewCount": 3,
+    "completionSum": 3,
+    "duration": 2,
+    "createdAt": "2026-01-22T15:39:05.942Z"
+  },
+  "c299ccac-8268-45e0-af1e-a1ea5a3ae5b8": {
+    "id": "c299ccac-8268-45e0-af1e-a1ea5a3ae5b8",
+    "filePath": "/uploads/trimmed/c299ccac-8268-45e0-af1e-a1ea5a3ae5b8.webm",
+    "viewCount": 1,
+    "completionSum": 2,
+    "duration": 5,
+    "createdAt": "2026-01-22T15:44:52.523Z",
+    "title": "Mangilal",
+    "description": "bhikaridas",
+    "tags": [
+      "hagmaare"
+    ]
+  },
+  "50d347eb-6f6f-428f-aa58-7cc8fe469143": {
+    "id": "50d347eb-6f6f-428f-aa58-7cc8fe469143",
+    "filePath": "/uploads/trimmed/50d347eb-6f6f-428f-aa58-7cc8fe469143.webm",
+    "viewCount": 1,
+    "completionSum": 0.893,
+    "duration": 5,
+    "createdAt": "2026-01-22T15:51:22.630Z",
+    "title": "Hi ",
+    "description": "there",
+    "tags": [
+      "hi"
+    ]
+  },
+  "e18ef236-65d1-484f-9e08-4e10a1ae609b": {
+    "id": "e18ef236-65d1-484f-9e08-4e10a1ae609b",
+    "filePath": "/uploads/trimmed/e18ef236-65d1-484f-9e08-4e10a1ae609b.webm",
+    "viewCount": 0,
+    "completionSum": 0,
+    "duration": 5,
+    "createdAt": "2026-01-22T18:05:22.351Z"
+  },
+  "acf29abb-97d4-439d-bb08-c21981969873": {
+    "id": "acf29abb-97d4-439d-bb08-c21981969873",
+    "filePath": "/uploads/trimmed/acf29abb-97d4-439d-bb08-c21981969873.webm",
+    "viewCount": 3,
+    "completionSum": 2,
+    "duration": 4,
+    "createdAt": "2026-01-22T18:16:15.287Z",
+    "title": "Portfolio",
+    "description": "My basic info",
+    "tags": [
+      ""
+    ]
+  },
+  "c3397448-e229-4e01-986a-6badd989f8de": {
+    "id": "c3397448-e229-4e01-986a-6badd989f8de",
+    "filePath": "/uploads/trimmed/c3397448-e229-4e01-986a-6badd989f8de.webm",
+    "viewCount": 3,
+    "completionSum": 0,
+    "duration": 6,
+    "createdAt": "2026-01-22T18:21:57.230Z",
+    "title": "Hi there",
+    "description": "my basic info",
+    "tags": [
+      ""
+    ]
+  },
+  "eb019d08-48aa-4367-b284-8f63db3a18de": {
+    "id": "eb019d08-48aa-4367-b284-8f63db3a18de",
+    "filePath": "/uploads/trimmed/eb019d08-48aa-4367-b284-8f63db3a18de.webm",
+    "viewCount": 0,
+    "completionSum": 0,
+    "duration": 3,
+    "createdAt": "2026-01-22T18:28:48.682Z",
+    "title": "My info",
+    "description": "Basic info",
+    "tags": [
+      ""
+    ]
+  },
+  "94235fe1-2ac6-47bf-94d3-2156161f6631": {
+    "id": "94235fe1-2ac6-47bf-94d3-2156161f6631",
+    "filePath": "/uploads/trimmed/94235fe1-2ac6-47bf-94d3-2156161f6631.webm",
+    "viewCount": 1,
+    "completionSum": 0,
+    "duration": 3,
+    "createdAt": "2026-01-22T18:34:46.587Z",
+    "title": "Portfolio",
+    "description": "Hi there",
+    "tags": [
+      ""
+    ]
+  },
+  "29ecea43-2449-46d0-b3d8-f0a29f361ead": {
+    "id": "29ecea43-2449-46d0-b3d8-f0a29f361ead",
+    "filePath": "/uploads/trimmed/29ecea43-2449-46d0-b3d8-f0a29f361ead.webm",
+    "viewCount": 1,
+    "completionSum": 0.6857106666666667,
+    "duration": 3,
+    "createdAt": "2026-01-22T18:41:29.109Z"
+  },
+  "fb824922-8980-4093-9136-bf6afd92b447": {
+    "id": "fb824922-8980-4093-9136-bf6afd92b447",
+    "filePath": "/uploads/trimmed/fb824922-8980-4093-9136-bf6afd92b447.webm",
+    "viewCount": 1,
+    "completionSum": 0,
+    "duration": 3,
+    "createdAt": "2026-01-22T18:43:06.452Z"
+  },
+  "53377cc4-a3dd-4a94-be80-4351d20d1e24": {
+    "id": "53377cc4-a3dd-4a94-be80-4351d20d1e24",
+    "filePath": "/uploads/trimmed/53377cc4-a3dd-4a94-be80-4351d20d1e24.webm",
+    "viewCount": 0,
+    "completionSum": 0,
+    "duration": 5,
+    "createdAt": "2026-01-22T18:50:40.824Z"
   }
 }
