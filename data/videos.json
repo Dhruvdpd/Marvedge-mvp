@@ -1,0 +1,34 @@
+{
+  "555862f0-4ce2-427d-87d9-378986c7a921": {
+    "id": "555862f0-4ce2-427d-87d9-378986c7a921",
+    "filePath": "/uploads/trimmed/555862f0-4ce2-427d-87d9-378986c7a921.webm",
+    "viewCount": 0,
+    "completionSum": 0,
+    "duration": 3,
+    "createdAt": "2026-01-22T12:36:35.288Z"
+  },
+  "61f6e4af-c443-4a58-a38a-2702fce5f7ec": {
+    "id": "61f6e4af-c443-4a58-a38a-2702fce5f7ec",
+    "filePath": "/uploads/trimmed/61f6e4af-c443-4a58-a38a-2702fce5f7ec.webm",
+    "viewCount": 0,
+    "completionSum": 0,
+    "duration": 2,
+    "createdAt": "2026-01-22T12:43:11.378Z"
+  },
+  "9c1a72c1-59ee-49d8-9c81-310e1fb8b972": {
+    "id": "9c1a72c1-59ee-49d8-9c81-310e1fb8b972",
+    "filePath": "/uploads/trimmed/9c1a72c1-59ee-49d8-9c81-310e1fb8b972.webm",
+    "viewCount": 26,
+    "completionSum": 3.249871333333333,
+    "duration": 3,
+    "createdAt": "2026-01-22T12:59:22.740Z"
+  },
+  "61aeca34-cf10-44c0-816d-dbae6a1acf8e": {
+    "id": "61aeca34-cf10-44c0-816d-dbae6a1acf8e",
+    "filePath": "/uploads/trimmed/61aeca34-cf10-44c0-816d-dbae6a1acf8e.webm",
+    "viewCount": 1,
+    "completionSum": 0,
+    "duration": 2,
+    "createdAt": "2026-01-22T13:29:02.207Z"
+  }
+}
