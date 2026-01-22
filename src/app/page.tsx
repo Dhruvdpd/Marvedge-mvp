@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef, useState } from "react"
-import { Camera, Upload, Scissors, FileVideo, Download, Type, Droplet, ArrowRight, Subtitles } from "lucide-react"
+import { Camera, Upload, Scissors, FileVideo, Download, Type, Droplet, ArrowRight, Subtitles, Mic } from "lucide-react"
 
 type RecordingState = "inactive" | "recording" | "paused"
 
@@ -37,6 +37,13 @@ export default function Home() {
   // Subtitles
   const [srtUrl, setSrtUrl] = useState<string | null>(null)
   const [generatingSubtitles, setGeneratingSubtitles] = useState(false)
+
+  // Voiceover
+  const [voiceoverText, setVoiceoverText] = useState("")
+  const [voiceId, setVoiceId] = useState("21m00Tcm4TlvDq8ikWAM") // Rachel voice
+  const [generatingVoiceover, setGeneratingVoiceover] = useState(false)
+  const [voiceoverUrl, setVoiceoverUrl] = useState<string | null>(null)
+  const [videoWithVoiceoverUrl, setVideoWithVoiceoverUrl] = useState<string | null>(null)
 
   // Blur
   const [blurX, setBlurX] = useState(100)
@@ -180,6 +187,10 @@ export default function Home() {
               <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">
                 <Subtitles className="w-5 h-5" />
                 Subtitles
+              </button>
+              <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">
+                <Mic className="w-5 h-5" />
+                AI Voiceover
               </button>
             </>
           )}
@@ -725,6 +736,117 @@ export default function Home() {
                     </a>
                   </div>
                 )}
+              </div>
+
+              {/* AI Voiceover */}
+              <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 mb-8">
+                <h2 className="text-xl font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+                  <Mic className="w-6 h-6 text-violet-600" />
+                  AI Voiceover (ElevenLabs)
+                </h2>
+
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                      Voiceover Script
+                    </label>
+                    <textarea
+                      placeholder="Enter the text you want to convert to speech..."
+                      value={voiceoverText}
+                      onChange={(e) => setVoiceoverText(e.target.value)}
+                      rows={4}
+                      className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:ring-2 focus:ring-violet-500 focus:border-transparent"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                      Voice
+                    </label>
+                    <select
+                      value={voiceId}
+                      onChange={(e) => setVoiceId(e.target.value)}
+                      className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:ring-2 focus:ring-violet-500 focus:border-transparent"
+                    >
+                      <option value="21m00Tcm4TlvDq8ikWAM">Rachel - Natural (Female)</option>
+                      <option value="AZnzlk1XvdvUeBnXmlld">Domi - Strong (Female)</option>
+                      <option value="EXAVITQu4vr4xnSDxMaL">Bella - Soft (Female)</option>
+                      <option value="ErXwobaYiN019PkySvjV">Antoni - Well-rounded (Male)</option>
+                      <option value="VR6AewLTigWG4xSOukaG">Arnold - Crisp (Male)</option>
+                      <option value="pNInz6obpgDQGcFmaJgB">Adam - Deep (Male)</option>
+                      <option value="yoZ06aMxZJJ28mfd3POQ">Sam - Dynamic (Male)</option>
+                    </select>
+                  </div>
+
+                  <button
+                    disabled={generatingVoiceover || !voiceoverText.trim()}
+                    onClick={async () => {
+                      setGeneratingVoiceover(true)
+
+                      try {
+                        const res = await fetch("/api/voiceover", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({
+                            videoId: trimmedVideoId,
+                            text: voiceoverText,
+                            voiceId: voiceId
+                          })
+                        })
+
+                        const data = await res.json()
+                        
+                        if (res.ok) {
+                          setVoiceoverUrl(data.voiceoverUrl)
+                          setVideoWithVoiceoverUrl(data.videoWithVoiceoverUrl)
+                        } else {
+                          alert(data.error || "Failed to generate voiceover")
+                        }
+                      } catch (error) {
+                        console.error("Voiceover error:", error)
+                        alert("Failed to generate voiceover")
+                      }
+
+                      setGeneratingVoiceover(false)
+                    }}
+                    className="flex items-center gap-2 px-6 py-3 bg-violet-600 hover:bg-violet-700 disabled:bg-violet-400 text-white rounded-xl font-semibold shadow-lg transition-all"
+                  >
+                    <Mic className="w-5 h-5" />
+                    {generatingVoiceover ? "Generating..." : "Generate AI Voiceover"}
+                  </button>
+
+                  {generatingVoiceover && (
+                    <p className="text-sm text-slate-600 dark:text-slate-400">
+                      Generating professional voiceover with ElevenLabs...
+                    </p>
+                  )}
+
+                  {voiceoverUrl && (
+                    <div className="mt-4 space-y-3">
+                      <div className="p-4 bg-violet-50 dark:bg-violet-900/20 border border-violet-200 dark:border-violet-800 rounded-lg">
+                        <p className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                          Audio Only:
+                        </p>
+                        <audio src={voiceoverUrl} controls className="w-full" />
+                      </div>
+
+                      {videoWithVoiceoverUrl && (
+                        <div className="p-4 bg-violet-50 dark:bg-violet-900/20 border border-violet-200 dark:border-violet-800 rounded-lg">
+                          <p className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                            Video with AI Voiceover:
+                          </p>
+                          <a
+                            href={videoWithVoiceoverUrl}
+                            target="_blank"
+                            className="text-violet-700 dark:text-violet-400 font-medium hover:underline"
+                          >
+                            📥 Download Video with Voiceover
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Export MP4 */}

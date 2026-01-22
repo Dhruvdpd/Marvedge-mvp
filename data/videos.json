@@ -168,7 +168,7 @@
   "e79da2e4-ce88-4efc-bf3d-145085c9f520": {
     "id": "e79da2e4-ce88-4efc-bf3d-145085c9f520",
     "filePath": "/uploads/trimmed/e79da2e4-ce88-4efc-bf3d-145085c9f520.webm",
-    "viewCount": 2,
+    "viewCount": 33,
     "completionSum": 2,
     "duration": 5,
     "createdAt": "2026-01-22T20:39:00.615Z",
@@ -177,5 +177,34 @@
     "tags": [
       ""
     ]
+  },
+  "dcbd2082-d7f6-4ac8-b806-1b0649cefeea": {
+    "id": "dcbd2082-d7f6-4ac8-b806-1b0649cefeea",
+    "filePath": "/uploads/trimmed/dcbd2082-d7f6-4ac8-b806-1b0649cefeea.webm",
+    "viewCount": 3,
+    "completionSum": 0,
+    "duration": 6,
+    "createdAt": "2026-01-22T20:55:33.424Z",
+    "title": "Basic test video",
+    "description": "Testing purposes",
+    "tags": [
+      ""
+    ]
+  },
+  "e4542696-6a83-4842-afe5-dcd56697a9da": {
+    "id": "e4542696-6a83-4842-afe5-dcd56697a9da",
+    "filePath": "/uploads/trimmed/e4542696-6a83-4842-afe5-dcd56697a9da.webm",
+    "viewCount": 0,
+    "completionSum": 0,
+    "duration": 5,
+    "createdAt": "2026-01-22T20:59:36.697Z"
+  },
+  "b78c1757-6fb6-40d0-ab4d-fbbdae861727": {
+    "id": "b78c1757-6fb6-40d0-ab4d-fbbdae861727",
+    "filePath": "/uploads/trimmed/b78c1757-6fb6-40d0-ab4d-fbbdae861727.webm",
+    "viewCount": 0,
+    "completionSum": 0,
+    "duration": 5,
+    "createdAt": "2026-01-22T20:59:42.490Z"
   }
 }
